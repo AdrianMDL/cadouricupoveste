@@ -94,6 +94,13 @@ nav .social-media a {
 	}
 }
 /******** BANNER SECTION BANNER SECTION*******/
+.top-banner {
+	transition: transform 0.3s ease;
+  }
+  
+  .top-banner:hover {
+	transform: scale(1.1); /* Mărește secțiunea la 110% din dimensiunea originală */
+  }
 .banner-section {
 	margin-top: 80px;
 	padding-bottom: 80px;
@@ -140,12 +147,44 @@ nav .social-media a {
 	font-family 'Raleway', sans-serif;
 	font-weight: 500
 }
+
+  
+  .category-list img {
+	transition: transform 0.3s ease;
+  }
+  
+  .category-list:hover img {
+	transform: scale(1.1); /* Mărește imaginea la 110% din dimensiunea originală la plasarea cursorului deasupra */
+  }
+  
+  .famous-product {
+	transition: transform 0.3s ease;
+  }
+  
+  .famous-product.hovered {
+	transform: scale(1.1); /* Mărește secțiunea la 110% din dimensiunea originală când este pe deasupra unei imagini */
+  }
+  .price .fa-plus {
+	color: black; /* Culoare implicită */
+  }
+  
+  .price .fa-plus:hover {
+	color: red; /* Culoare roșie la plasarea cursorului deasupra */
+  }
+  #cart-count {
+	font-size: 10px; /* Schimbă dimensiunea fontului la 10px */
+	padding: 2px 5px; /* Adaugă puțin spațiu în jurul numărului */
+	border-radius: 50%; /* Face numărul să fie rotund */
+	background-color: red; /* Schimbă culoarea fundalului */
+	color: white; /* Schimbă culoarea textului la alb */
+  }  
 .banner-img img {
 	margin-top: 30px;
 	width: 100%;
 	height: auto;
 	float: right;
 }
+
 @media screen and (max-width: 768px) {
 	.top-header {
 		height: auto;
@@ -188,6 +227,7 @@ nav .social-media a {
 	}
 }
 /********ADV ADV ADV *******/
+
 .top-banner {
 	border: 1px solid #00000024;
 	padding: 30px 5px 30px 20px;
